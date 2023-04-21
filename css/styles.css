@@ -935,12 +935,12 @@
               letter-spacing: 0.02em;
               color: #F4F4FD;
               background-color: rgb(77, 90, 229);
-          
+             z-index:(--modal-idx);
               padding-top: 40px;
               padding-left: 32px;
           
               padding-right: 32px;
-          
+          transition: opacity 250ms,visibility 250ms;
           }
             
 
