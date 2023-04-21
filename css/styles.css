@@ -529,7 +529,7 @@
        color: var(--background-section-color);
        width: 264px;
      }
-    .window-animation-one.is-hidden{
+    .window-animation-one is-hidden {
       opacity: 0;
     visibility: hidden;
     pointer-events: none;
