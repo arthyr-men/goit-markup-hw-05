@@ -942,5 +942,14 @@
               padding-right: 32px;
           transition: opacity 250ms,visibility 250ms;
           }
+          .is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+          }
+          .open-modal:hover {
+            opacity: 0.8;
+          }
+          
             
 
