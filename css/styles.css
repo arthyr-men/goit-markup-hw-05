@@ -956,7 +956,11 @@
           button.active {
             background-color: var(--pressed-state-color);
           }
-               
-          
-            
+         /*Прикол */   
 
+   .hau-center{position: absolute;
+    right: 110px;
+    top: 200px;
+       color: rgb(56, 10, 131);}         
+.hau{ position: absolute;
+  }
