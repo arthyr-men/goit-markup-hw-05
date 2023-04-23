@@ -25,7 +25,9 @@
       .list{ list-style: none;
        
       }
-     
+      .studio-header-portfolio-link .active {
+        color: blue;
+      }
       .studio-header-portfolio {
 
         font-weight: 500;
@@ -72,13 +74,13 @@
 .active::after {
   content: "";
   width: 100%;
-  height: 4px;
+  height: 3px;
   border-radius: 2px;
   display: block;
-  background-color: var(--pressed-state-color);
+  background-color: var(--pressed-state-color) !important;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   opacity: 1;
 }
 
@@ -425,15 +427,15 @@
 }
 
 .our-customers-list-item-link {
-  color:#8E8F99 ;
+  color: #8E8F99;
   display: flex;
   border: 1px solid #8E8F99;
   justify-content: center;
   align-items: center;
-
   height: 88px;
-
   border-radius: 4px;
+  transition: color var(--transition-duration-and-func),
+      border var(--transition-duration-and-func);
 
 }
 
@@ -662,7 +664,7 @@
               }
 
               .portfolio-button:hover{
-                color: var(--background-white-color);
+                color:var(--background-white-color);
                 background-color: var(--pressed-state-color);
                 border: 1px solid transparent;
                 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -696,7 +698,7 @@
             padding: 12px 24px;
             
             }
-            .portfolio-button.filters {
+            .portfolio-button .filters {
               padding: 12px 24px;
               border: 1px solid var(--accent-color);
               min-width: 69px;
@@ -935,12 +937,12 @@
               letter-spacing: 0.02em;
               color: #F4F4FD;
               background-color: rgb(77, 90, 229);
-             z-index:(--modal-idx);
+          
               padding-top: 40px;
               padding-left: 32px;
           
               padding-right: 32px;
-          transition: opacity 250ms,visibility 250ms;
+          
           }
           .is-hidden {
             opacity: 0;
@@ -950,6 +952,10 @@
           .open-modal:hover {
             opacity: 0.8;
           }
+          button.active {
+            background-color: var(--pressed-state-color);
+          }
+               
           
             
 
