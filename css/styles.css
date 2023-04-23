@@ -38,7 +38,9 @@
         display: flex;
         padding-top: 24px;
         padding-bottom: 24px;
-        align-items: center
+        align-items: center;
+        
+
        } 
        
        .studio-header-portfolio::before {
@@ -70,6 +72,7 @@
        }
        .active {
         position: relative;
+        --primary-brand-color: #4D5AE5;
     }
     
 .active::after {
@@ -78,11 +81,12 @@
   height: 3px;
   border-radius: 2px;
   display: block;
-  background-color: var(--pressed-state-color) !important;
+  background-color: var(--pressed-state-color) ;
   position: absolute;
   left: 0;
   bottom: -1px;
-  opacity: 1;
+  opacity: 0.8;
+  
 }
 
 
@@ -247,7 +251,7 @@
             letter-spacing: 0.02em;
             color: var(--body-text-color);
             }
-           .content-our-actions-icon{}
+           
            .content-our-actions-item-icon {
             display: flex;
             height: 112px;
@@ -661,9 +665,7 @@
                color: #434455;
               }
           
-            .portfolio-btn-list{
-              }
-
+         
               .portfolio-button:hover{
                 color:var(--background-white-color);
                 background-color: var(--pressed-state-color);
