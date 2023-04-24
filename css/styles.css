@@ -700,7 +700,8 @@
                   border var(--transition-duration-and-func),
                   box-shadow var(--transition-duration-and-func);}
             
-        .portfolio-button .filters {
+        .portfolio-button .filters
+        {
               padding: 12px 24px;
               border: 1px solid var(--accent-color);
               min-width: 69px;
