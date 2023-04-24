@@ -75,7 +75,7 @@
        }
        .active {
         position: relative;
-       
+       color:#404BBF;
     }
     
 .active::after {
@@ -262,7 +262,8 @@
             align-items: center;
             margin-bottom: 8px;
             border-radius: 4px;
-        
+            fill: currentColor;
+            
         }
                  
              /*section-3*/
@@ -434,7 +435,8 @@
   color: var(--title-text-color);
   margin-bottom: 72px;
 }
-
+.content-our-actions-icon:hover {color:  blue;
+  }
 .our-customers-list-item-link {
   color: #8E8F99;
   display: flex;
@@ -443,6 +445,7 @@
   align-items: center;
   height: 88px;
   border-radius: 4px;
+  
   transition: color var(--transition-duration-and-func),
       border var(--transition-duration-and-func);
 
@@ -903,6 +906,8 @@
             
             img {
                 display: block;
+                width: 100%;
+                height: auto;
             }
             
             button {
