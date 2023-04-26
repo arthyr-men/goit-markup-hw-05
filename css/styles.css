@@ -104,19 +104,16 @@
         color: var(--title-text-color);
         text-transform: uppercase;
       }
-      .logo-class-portfolio
-      {
-        margin-right: 76px;
-        font-family: var(--secondery-font);
-        font-style: normal;
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        color: var(--primary-brand-color);
-        text-transform: uppercase;
-        display: inline-block;
-        margin-bottom: 16px;
+      .logo-class-portfolio{
+          font-family: var(--secondery-font);
+         font-weight: 800;
+         font-size: 18px;
+         line-height: 1.17;
+         letter-spacing: 0.03em;
+         color: var(--primary-brand-color);
+         text-transform: uppercase;
+         margin-right: 76px;
+        
       }
       .nav-logo-class{ 
         display: flex;
@@ -254,7 +251,7 @@
             color: var(--body-text-color);
             }
            
-           .content-our-actions-item-icon {
+           . {
             display: flex;
             height: 112px;
             background-color: #F4F4FD;
@@ -265,6 +262,7 @@
             fill: currentColor;
             
         }
+       
                  
              /*section-3*/
             .section-three {
@@ -435,8 +433,8 @@
   color: var(--title-text-color);
   margin-bottom: 72px;
 }
-.content-our-actions-icon:hover {color:  blue;
-  }
+
+  
 .our-customers-list-item-link {
   color: #8E8F99;
   display: flex;
@@ -477,7 +475,16 @@
  
 }
 
+.content-our-actions-item-icon {
+  display: flex;
+  height: 112px;
+  background-color: #F4F4FD;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  border-radius: 4px;
 
+}
    
           /*footer*/
 
@@ -544,10 +551,11 @@
        color: var(--background-section-color);
        width: 264px;
      }
-    .window-animation-one is-hidden {
-      opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    .window-animation-one .is-hidden
+     {
+     opacity: 0;
+       visibility: hidden;
+       pointer-events: none;
   
     } 
     .window-animation-one{
@@ -597,7 +605,7 @@
           color: #FFFFFF;
         }
         .window-configuration-one-icon{
-          transition: fill var(--transition-duration-and-func);
+          
         }
         .window-configuration-one:hover .window-configuration-one-icon,
         .window-configuration-one:focus .window-configuration-one-icon{
